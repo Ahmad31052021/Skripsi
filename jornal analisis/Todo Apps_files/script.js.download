@@ -1,0 +1,14 @@
+// Kode document.addEventListener("DOMContentLoaded", function () .. )  berfungsi sebagai listener yang akan menjalankan kode di dalamnya jika DOM sudah di-load dengan baik.
+
+
+document.addEventListener('DOMContentLoaded', function(){
+
+const submitAction = document.getElementById('form');
+
+submitAction.addEventListener('submit', function(event){
+    event.preventDefault();
+    addTodo();
+    
+});
+
+});
